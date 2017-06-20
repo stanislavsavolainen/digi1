@@ -1,0 +1,35 @@
+
+
+<script type="text/javascript">
+
+	function convert_base64(){
+
+	//getElementByID from text-area
+	//use base64 algorithm to convert text-area value to base64 string
+
+	console.log("1234567890");
+
+	var x = document.getElementById("data1").value;
+
+	//convert to base64
+	
+	var base = btoa(x);
+	var unconvert = atob(base);
+
+	document.getElementById("converted_data").innerHTML = base + " -----> " +unconvert;
+	
+	}
+
+</script>
+
+
+<html>
+	<title>Base64</title>
+	<body>
+		Convert to base64 : <input type="text" id="data1" />
+		<br /><input type="submit" value ="Convert to base64" onclick="convert_base64()" />
+		<br />< br />
+		<p id="converted_data" /> 
+	
+	</body>
+</html>

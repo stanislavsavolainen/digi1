@@ -1,0 +1,45 @@
+<script type="text/javascript">
+
+	//global variable
+	var current_fib = 1;	
+
+//-------------------------------------------------
+
+	function fib_answer(){
+
+		current_fib += 1; 		
+
+		console.log( next_fib(current_fib)  );	
+
+		document.getElementById("answer_cell").innerHTML = next_fib(current_fib);	
+
+	}
+
+
+//------------------------------------------------	
+	function next_fib(next){
+
+		/*
+		var next_fib = 1;
+		
+		if(next <= 1) next_fib = next;
+		else  next_fib = next_fib(next - 1) + next_fib(next - 2);
+              
+		return next_fib;
+		*/
+
+		if(next <= 1) return next;
+		else return next_fib(next - 1) + next_fib(next - 2);
+
+	}
+	
+
+</script>
+
+<html>
+	<title>Fibonachi test 1</title>
+	<body>
+		<button onclick="fib_answer()"> Calculate next fibonachi number </button>
+		<br /> <p id="answer_cell" />	
+	</body> 
+</html>

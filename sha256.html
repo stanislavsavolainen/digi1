@@ -1,0 +1,33 @@
+
+
+<script type="text/javascript" src="node_modules/js-sha256/build/sha256.min.js"></script>
+
+<script type="text/javascript">
+
+//https://www.npmjs.com/package/sha256
+
+//var sha256_module = require('sha256');
+
+function sha256x(){
+	var x = document.getElementById("data1").value;
+
+	//console.log(sha256(x));
+
+	//console.log(sha256("1234"));			
+
+	document.getElementById("converted_data").innerHTML = sha256(x); //sha256(x); // x;
+}
+
+</script>
+
+
+<html>
+	<title>SHA256</title>
+	<body>
+		Convert to sha256 : <input type="text" id="data1" />
+		<br /><input type="submit" value ="Convert to sha256" onclick="sha256x()" />
+		<br />< br />
+		<p id="converted_data" /> 
+	</body>
+
+</html>

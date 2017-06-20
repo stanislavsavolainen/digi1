@@ -22,4 +22,16 @@
 
 
 
+npm:
+
+> npm init
+> npm install --save js-sha256
+
+-> create html file and load js-sha256 library to convert normal string to sha256 string
+
+>touch .gitignore  //create invisible file to ignore files when push to version control system
+> nano .gitignore  // modify file content -> adding folders and files to ignore 
+
+>git status // show what file you are adding to git -> if .gitigonre is modified right "git status"
+ not showing ignored files and folder 
 
