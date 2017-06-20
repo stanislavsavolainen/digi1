@@ -1,0 +1,25 @@
+
+
+1: Create repository in Github
+  -> visit your github.com profile page, press  + button and press New repository
+  -> write Repository name
+  -> write Descripton (optional)
+  -> select public or private github project
+  -> you can press "Initialize this repository with a README" if you required readme file 
+  -> you can also select .gitignore and license option 
+  => press Create repository button
+
+2 : clone repository with git
+> git clone https://github.com/stanislavsavolainen/digi1.git ( /git_repository_name.git)
+
+
+3 : push changes to git repository
+> git status //check change in github
+> git add .  // add all new files and changes for new git version of projects
+> git commit -m "comments of version changes"
+> git push // push changes to github (Enter your github account and password)
+  -> you can check updates visiting your github profile and check this repository
+
+
+
+
